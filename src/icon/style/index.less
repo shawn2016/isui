@@ -1,0 +1,27 @@
+@import "~isui-iconfont/fonts/is-iconfont.css";
+.is-icon-spin:before {
+  animation: loading-circle 1s infinite linear;
+}
+[class^="is-icon-"], [class*=" is-icon-"] {
+  font-size: 12px;
+}
+[class^="is-icon-"]:before, {
+  vertical-align: middle;
+  display: inline-block;
+}
+[class^="is-icon-"]:after, [class*=" is-icon-"]:after {
+  vertical-align: middle;
+  content: '';
+  height: 100%;
+  width: 0;
+  display: inline-block;
+}
+
+@keyframes loading-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

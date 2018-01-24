@@ -1,0 +1,51 @@
+
+.is-row {
+  &:after,&:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.is-row-flex {
+  display: flex;
+  &:before,
+  &:after {
+    display: none;
+  }
+
+  &.is-row-justify-center {
+    justify-content: center;
+  }
+  &.is-row-justify-end {
+    justify-content: flex-end;
+  }
+  // start 不用设置
+  // &.is-row-justify-start {
+  //   justify-content: flex-start;
+  // }
+  &.is-row-justify-space-between {
+    justify-content: space-between;
+  }
+  &.is-row-justify-space-around {
+    justify-content: space-around;
+  }
+  // top 不用设置样式
+  // &.is-row-align-top {
+  //   align-items: flex-start;
+  // }
+  &.is-row-align-middle {
+    align-items: center;
+  }
+  &.is-row-align-baseline {
+    align-items: baseline;
+  }
+  &.is-row-align-bottom {
+    align-items: flex-end;
+  }
+  &.is-row-align-stretch {
+    align-items: stretch;
+  }
+}

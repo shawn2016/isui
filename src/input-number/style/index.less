@@ -1,0 +1,95 @@
+@import "../../style/variables.less";
+@import "../../style/mixins/index.less";
+
+@is-input-number:~'is-input-number';
+
+.@{is-input-number} {
+  display: inline-block;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+  }
+  input {
+    -moz-appearance: textfield;
+  }
+  &:hover {
+    .is-input:not(.disabled) .is-input-number-control {
+      opacity: 1;
+      color: #333;
+    }
+  }
+  &-control {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    top: 1px;
+    right: 1px;
+    left: 0;
+    opacity: 0;
+    transition: all @transition-time @transition-timing-functio;
+  }
+  &-minus, &-push {
+    overflow: hidden;
+    height: 50%;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #e8e8e8;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+    &:active {
+      outline: 0;
+      background-image: none;
+      box-shadow: inset 0 8px 32px -8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &-push {
+    box-shadow: 0 -1px 0 0 #e8e8e8 inset;
+    margin-bottom: -1px;
+    z-index: 1;
+    border-radius: 0 3px 0 0;
+    i {
+      position: relative;
+      top: -2px;
+      transform: scale(.58333333) rotate(0deg);
+    }
+  }
+  &-minus {
+    border-radius: 0 0 3px;
+    i {
+      transform: scale(0.58333333) translateY(-4px);
+    }
+  }
+  .is-disabled &-control {
+    display: none;
+  }
+}
+
+.is-input-number .is-input-large {
+  .is-input-number-push i {
+    transform: scale(0.58333333) translateY(2px);
+  }
+  .is-input-number-minus i {
+    transform: scale(0.58333333) translateY(-1px);
+  }
+}
+
+.is-input-number .is-input-small {
+  .is-input-number-push i {
+    transform: scale(0.58333333) translateY(-3px);
+  }
+  .is-input-number-minus i {
+    transform: scale(0.58333333) translateY(-5px);
+  }
+}
+
+.is-input-number .is-input-mini {
+  .is-input-number-push i {
+    transform: scale(0.58333333) translateY(-4px);
+  }
+  .is-input-number-minus i {
+    transform: scale(0.58333333) translateY(-7px);
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../style/variables.less";
+@import "../../style/mixins/index.less";
+@import './time-select.less';
+@import './datepicker.less';
+
+.is-date-base {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  & + .is-date-base {
+    margin-left: 5px;
+  }
+  .is-animate {
+    position: relative;
+    z-index: 1004;
+  }
+  .is-disabled {
+    color: #ccc;
+    input {
+      color: #ccc;
+    }
+  }
+}

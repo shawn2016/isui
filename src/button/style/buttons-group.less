@@ -1,0 +1,121 @@
+@import "../../style/variables.less";
+@import "../../style/mixins/index.less";
+
+.is-btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  > .is-btn {
+    position: relative;
+    float: left;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 2;
+    }
+  }
+}
+
+.is-btn-group {
+  .is-btn-default + .is-btn-default,
+  .is-btn-primary + .is-btn-primary,
+  .is-btn-success + .is-btn-success,
+  .is-btn-info + .is-btn-info,
+  .is-btn-warn + .is-btn-warn,
+  .is-btn-danger + .is-btn-danger {
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
+  }
+  .is-btn + .is-btn,
+  .is-btn + .is-btn-group,
+  .is-btn-group + .is-btn,
+  .is-btn-group + .is-btn-group {
+    margin-left: -1px;
+  }
+  > .is-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  > .is-btn:first-child:not(:last-child) {
+    .border-right-radius(0);
+  }
+  > .is-btn:last-child:not(:first-child) {
+    .border-left-radius(0);
+  }
+  > .is-btn-group {
+    float: left;
+  }
+  > .is-btn-group:first-child:not(:last-child) {
+    > .is-btn:last-child {
+      .border-right-radius(0)
+    }
+  }
+  > .is-btn-group:not(:first-child):not(:last-child) > .is-btn {
+    border-radius: 0;
+  }
+  > .is-btn-group:last-child:not(:first-child) > .is-btn:first-child {
+    .border-left-radius(0)
+  }
+}
+
+.is-btn-group.is-btn-group-vertical {
+  .is-btn-link + .is-btn-link {
+    border-top: 0;
+  }
+  .is-btn + .is-btn {
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    &.is-btn-link {
+      border-top: 0;
+    }
+  }
+  .is-btn-default + .is-btn-default {
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
+  }
+}
+
+// 竖排分割按钮组
+// =======================
+
+.is-btn-group-vertical {
+  > .is-btn,
+  > .is-btn-group,
+  > .is-btn-group > .is-btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  > .is-btn + .is-btn,
+  > .is-btn + .is-btn-group,
+  > .is-btn-group + .is-btn,
+  > .is-btn-group + .is-btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+  }
+  > .is-btn {
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:first-child:not(:last-child) {
+      .border-bottom-radius(0);
+      border-top-right-radius: @btn-border-radius-base;
+    }
+    &:last-child:not(:first-child) {
+      border-bottom-left-radius: @btn-border-radius-base;
+      .border-top-radius(0);
+    }
+  }
+  > .is-btn-group:not(:first-child):not(:last-child) > .is-btn {
+    border-radius: 0;
+  }
+  > .is-btn-group:first-child:not(:last-child) {
+    > .is-btn:last-child,
+    > .dropdown-toggle {
+      .border-bottom-radius(0);
+    }
+  }
+  > .is-btn-group:last-child:not(:first-child) > .is-btn:first-child {
+    .border-top-radius(0);
+  }
+}
