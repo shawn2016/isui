@@ -50,7 +50,7 @@ import { Button as ButtonView } from 'isui';
 要开发，运行自重新构建，获取代码：
 
 ```bash
-$ git clone https://github.com/shawn2016/ui-react
+$ git clone https://github.com/shawn2016/isui
 $ cd ui-react
 $ npm install # or  yarn install
 # or 解决phantomjs下载失败问题

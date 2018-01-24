@@ -98,8 +98,8 @@ const RoutersContainer = withRouter(({ history, location, ...props }) => {
             {renderMenu()}
           </ul>
           <div className={`${prefixCls}-info`}>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/ui-react/issues"><Icon type="message" /> 反馈建议</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/ui-react/issues/new"><Icon type="question-circle" /> 提交bug</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui/issues"><Icon type="message" /> 反馈建议</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui/issues/new"><Icon type="question-circle" /> 提交bug</a>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui.git"><Icon type="github" /> Github</a>
           </div>
         </div>

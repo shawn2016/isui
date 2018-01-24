@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shawn2016/ui-react.git"
+    "url": "https://github.com/shawn2016/isui.git"
   },
   "keywords": [
     "react",
@@ -30,9 +30,9 @@
   "author": "shawn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shawn2016/ui-react/issues"
+    "url": "https://github.com/shawn2016/isui/issues"
   },
-  "homepage": "https://github.com/shawn2016/ui-react#readme",
+  "homepage": "https://github.com/shawn2016/isui#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "babel-cli": "^6.26.0",
