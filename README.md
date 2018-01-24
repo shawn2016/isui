@@ -33,7 +33,7 @@ ReactDOM.render(
 Visit the [https://github.com/shawn2016/isui.git](https://github.com/shawn2016/isui.git) website for more information.
 
 <p align="center">
-<a href="https://github.com/shawn2016/isui.git"><img src="https://github.com/shawn2016/icons/blob/master/test.png" /></a>
+<a href="https://github.com/shawn2016/isui.git"><img src="https://github.com/shawn2016/isui/blob/master/demo.png" /></a>
 </p>
 
 ### Development
