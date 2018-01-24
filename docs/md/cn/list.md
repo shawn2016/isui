@@ -176,8 +176,8 @@ const data = [
   },
   {
     'target':'_blank',
-    'href':'https://uiw-react.github.io/icons/',
-    'content': '从uiw组件库中抽离出来的，图标字体 isui-iconfont 发布'
+    'href':'https://github.com/shawn2016/isui.git/icons/',
+    'content': '从isui组件库中抽离出来的，图标字体 isui-iconfont 发布'
   },
   {
     'href':'#/cn/list',

@@ -54,7 +54,7 @@ module.exports = {
       "babel-polyfill",
       paths.appIndexJs
     ],
-    'uiws': paths.readSrcSync(paths.appSrc),
+    'isuis': paths.readSrcSync(paths.appSrc),
     'babelstandalone': ['babel-standalone'],
   },
   // 排除不打包的依赖包
@@ -264,9 +264,9 @@ module.exports = {
     // 打包过程中，最小化id值。在Webpack v2.0以及以后的版本默认添加。
     // new webpack.optimize.OccurrenceOrderPlugin()
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendors', 'babelstandalone', 'uiws', 'marked', 'prismjs', 'libs', 'app'],
+      names: ['vendors', 'babelstandalone', 'isuis', 'marked', 'prismjs', 'libs', 'app'],
       filename: 'js/[name].[hash:8].js',
-      // chunks:['uiw','marked'],
+      // chunks:['isui','marked'],
       // async: true,
       minChunks: Infinity,
       // children: true,

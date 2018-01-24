@@ -12,7 +12,7 @@ Dropdown 下拉菜单
 const menu = (
   <Menu>
     <Menu.Item index="0">
-      <a target="_blank" rel="noopener noreferrer" href="http://uiw-react.github.io/">UI组件库官方文档</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui.git">UI组件库官方文档</a>
     </Menu.Item>
     <Menu.Item index="1">
       <a target="_blank" rel="noopener noreferrer" href="http://wangchujiang.com/">个人网站</a>
@@ -46,7 +46,7 @@ class Demo extends Component {
 const menu = (
   <Menu>
     <Menu.Item index="0">
-      <a target="_blank" rel="noopener noreferrer" href="http://uiw-react.github.io/">UI组件库官方文档</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui.git">UI组件库官方文档</a>
     </Menu.Item>
     <Menu.Item index="1">
       <a target="_blank" rel="noopener noreferrer" href="http://wangchujiang.com/">个人网站</a>
@@ -80,7 +80,7 @@ class Demo extends Component {
 const menu = (
   <Menu>
     <Menu.Item index="0">
-      <a target="_blank" rel="noopener noreferrer" href="http://uiw-react.github.io/">UI组件库官方文档</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui.git">UI组件库官方文档</a>
     </Menu.Item>
     <Menu.Item index="1">
       <a target="_blank" rel="noopener noreferrer" href="javascript:;">个人网站</a>

@@ -89,7 +89,7 @@ const RoutersContainer = withRouter(({ history, location, ...props }) => {
       <div className={`${prefixCls}-menu-warpper`}>
         <div className={`${prefixCls}-menu-content`}>
           <div className={`${prefixCls}-logo`}>
-            <a href="https://uiw-react.github.io">
+            <a href="https://github.com/shawn2016/isui.git">
               <img src={Logo} alt="logo" />
               <span>isUI <i className="version">{version} </i> <sup>beta</sup></span>
             </a>
@@ -100,7 +100,7 @@ const RoutersContainer = withRouter(({ history, location, ...props }) => {
           <div className={`${prefixCls}-info`}>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/ui-react/issues"><Icon type="message" /> 反馈建议</a>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/ui-react/issues/new"><Icon type="question-circle" /> 提交bug</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw"><Icon type="github" /> Github</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui.git"><Icon type="github" /> Github</a>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 Color 色彩
 ===
 
-`isui` 的样式使用了 [Less](https://github.com/less/less.js) 作为开发语言，并定义了一系列全局/组件的样式变量，`uiw`中提供的所有颜色，你可以根据需求进行相应调整，[默认样式变量](http://lesscss.org/usage/#using-less-in-the-browser-modify-variables)。
+`isui` 的样式使用了 [Less](https://github.com/less/less.js) 作为开发语言，并定义了一系列全局/组件的样式变量，`isui`中提供的所有颜色，你可以根据需求进行相应调整，[默认样式变量](http://lesscss.org/usage/#using-less-in-the-browser-modify-variables)。
 
 
 ## 定制方式

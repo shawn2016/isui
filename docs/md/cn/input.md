@@ -194,9 +194,9 @@ class Demo extends Component {
   render() {
     return (
       <div style={styles}>
-        <Input addonBefore="http://" addonAfter=".com" value="uiw-react" />
+        <Input addonBefore="http://" addonAfter=".com" value="isui-react" />
         <Divider />
-        <Input addonAfter=".com" value="uiw-react" />
+        <Input addonAfter=".com" value="isui-react" />
         <Divider />
         <Input 
           addonBefore={
@@ -209,7 +209,7 @@ class Demo extends Component {
           addonAfter={
             <Button icon="search" type="primary">搜索</Button>
           }
-          value="uiw-react" 
+          value="isui-react" 
         />
       </div>
     )

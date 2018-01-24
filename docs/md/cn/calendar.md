@@ -47,7 +47,7 @@ function getListData(value) {
       listData = [
         { type: 'warning', content: 'EVGA宣布以1000美元天价回收GeForce 4显卡' },
         { type: 'success', content: '中国电动车初创公司蔚来据称考虑明年赴美上市。' },
-        { type: 'error', content: '组件库库uiw 1.5.5 发布' },
+        { type: 'error', content: '组件库库isui 1.5.5 发布' },
         { type: 'error', content: '美区 iMac Pro 正式发售 中国区将于近期发售。' },
         { type: 'error', content: '《人民日报》评玩命视频：带血的钱不能赚' },
         { type: 'error', content: '分析师：iPhone X销量尚可 但不会带来超级更新周期' },

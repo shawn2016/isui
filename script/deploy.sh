@@ -2,7 +2,7 @@
 
 # set ORIGIN to current git origin
 # ORIGIN=$(git remote -v | awk '$1=="origin" && $3=="(push)" {print $2}');
-ORIGIN=https://github.com/uiw-react/uiw-react.github.io.git;
+ORIGIN=https://github.com/shawn2016/isui.git;
 VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g');
 
 
@@ -20,7 +20,7 @@ git remote add origin $ORIGIN
 # git checkout -b gh-pages 
 git checkout -b master 
 git add . -A 
-git commit -m "Update uiw v$VERSION document." 
+git commit -m "Update isui v$VERSION document." 
 git push -f origin master
 
 # git reset --hard FETCH_HEAD

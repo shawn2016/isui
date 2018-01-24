@@ -82,7 +82,7 @@ class Demo extends Component {
         </div>
         <div style={titleStyle}>
           <h3 style={{margin:0}}>我爱漂亮妹妹</h3>
-          <p style={{margin:0}}><a href="https://uiw-react.github.io">https://uiw-react.github.io</a></p>
+          <p style={{margin:0}}><a href="https://github.com/shawn2016/isui.git">https://github.com/shawn2016/isui.git</a></p>
         </div>
       </Card>
     )
@@ -127,7 +127,7 @@ class Demo extends Component {
 const {Row,Col} = Layout;
 const titleStyle = {padding: `10px 16px`};
 const footer = (
-  <a href="https://uiw-react.github.io">
+  <a href="https://github.com/shawn2016/isui.git">
     <Icon type='user' />&nbsp;
     16 Friends
   </a>
@@ -145,7 +145,7 @@ class Demo extends Component {
         </div>
         <div style={titleStyle}>
           <h3 style={{margin:0}}>我爱漂亮妹妹</h3>
-          <p style={{margin:0}}><a href="https://uiw-react.github.io">https://uiw-react.github.io</a></p>
+          <p style={{margin:0}}><a href="https://github.com/shawn2016/isui.git">https://github.com/shawn2016/isui.git</a></p>
         </div>
       </Card>
     )

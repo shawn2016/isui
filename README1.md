@@ -162,7 +162,7 @@ npm i async-validator -S
 npm i react-slick -S
 ```
 
-安装isui-iconfont（uiw 图标）
+安装isui-iconfont（isui 图标）
 
 ```
 npm i isui-iconfont -S
