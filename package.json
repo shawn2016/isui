@@ -1,6 +1,6 @@
 {
-  "name": "ui-react",
-  "version": "1.0.0",
+  "name": "isui",
+  "version": "1.0.2",
   "description": "A high quality UI Toolkit, A Component Library for React 16+.",
   "main": "libs/index.js",
   "scripts": {

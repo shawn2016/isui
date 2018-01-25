@@ -122,8 +122,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = ["loading",'reload'];
     return (
       <div>
@@ -167,8 +167,8 @@ const iconList = [
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     return (
       <div>
         <Row gutter="10">
@@ -205,8 +205,8 @@ const iconList = [
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     return (
       <div>
         <Row gutter="10">
@@ -239,8 +239,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = [ 
       "plus", 'plus-circle-o','plus-circle', 'plus-square', 'plus-square-o', "question-circle-o", 
       "minus", 'minus-circle-o', 'minus-circle', 'minus-square', 'minus-square-o',"question-circle", 
@@ -279,8 +279,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = [ 
       'file-text', 'file-jpg', 'file-unknown', 'file-add', 'file-excel', 'file-pdf',
       'folder-add', 'folder-open', 'paper-clip', 
@@ -317,8 +317,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = [ 
       'heart-off', 'heart-on', 'star-on', 'star-off','lock', 'unlock','dashboard',
       'area-chart', 'bar-chart', 'dot-chart','pie-chart', 
@@ -360,8 +360,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = ['isui', 'windows', "linux", 'apple', 'facebook', 'twitter', 'adobe', "baidu", "ali-pay", 'android-o', 'android','reddit', 'github', 'github-o', "aliwangwang",   "dingding", "foursquare", "linkedin", "pinterest", "qq",  "weibo", "taobao", "weixin", 'css3', 'html5', ]
     return (
       <div>
@@ -395,8 +395,8 @@ class Demo extends Component {
 class Demo extends Component {
   render() {
     const {Row,Col} = Layout;
-    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#f4f4f4",marginBottom:10};
-    const iconStyle = {color:"#525252"};
+    const styleItem = {textAlign:"center",padding:"20px 10px",background: "#409EFF",marginBottom:10,borderRadius:"4px"};
+    const iconStyle = {color:"#fff"};
     const iconList = [
       "chrome", "safari", "firefox", "opera", "ie", 
     ]
