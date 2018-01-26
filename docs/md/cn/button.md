@@ -13,7 +13,7 @@ class Demo extends Component {
       <div>
         <Button>Normal</Button>
         <Button disabled>Disabled</Button>
-        <Button type="primary" active>Button</Button>
+        <Button type="primary"  active>Button</Button>
         <Button type="primary" size="small">more <Icon type="arrow-down" /></Button>
         <Button type="link"> (超连接样式)link </Button>
         <br/><br/>
@@ -22,6 +22,18 @@ class Demo extends Component {
         <Button type="info">信息按钮</Button>
         <Button type="warn">警告按钮</Button>
         <Button type="danger">错误按钮</Button>
+        <br/><br/>
+        <Button type="primary" round>主要按钮</Button>
+        <Button type="success" round>成功按钮</Button>
+        <Button type="info" round>信息按钮</Button>
+        <Button type="warn" round>警告按钮</Button>
+        <Button type="danger" round>错误按钮</Button>
+        <br/><br/>
+        <Button type="primary" plain>主要按钮</Button>
+        <Button type="success" plain>成功按钮</Button>
+        <Button type="info" plain>信息按钮</Button>
+        <Button type="warn" plain>警告按钮</Button>
+        <Button type="danger" plain>错误按钮</Button>
       </div>
     )
   }
@@ -368,20 +380,23 @@ const ButtonGroup = Button.Group;
 
 ### Button
 
-| 参数 | 说明 | 类型 | 默认值 |
-| -------- | -------- | -------- | -------- |
-| size | `large`, `default`, `small`, `mini` |String | - |
-| type | `default`,`primary`,`success`,`info`,`warn`,`error`,`danger` |String | - |
-| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) |String | `button` |
-| icon | 设置按钮的图标类型 |String | - |
-| block | 通过设置属性 block 可将按钮宽度设置为 100%，（块级元素），常用于弹窗内操作按钮。 |Boolean | false |
-| disabled | 禁用状态 |Boolean | false |
-| active | 激活状态，其表现为被按压下去（底色更深、边框夜色更深、向内投射阴影）。 |Boolean | false |
-| loading | 加载中状态 | Boolean | false |
-| onClick | click 事件的 handler |function | - |
+| 参数       | 说明                                       | 类型       | 默认值      |
+| -------- | ---------------------------------------- | -------- | -------- |
+| size     | `large`, `default`, `small`, `mini`      | String   | -        |
+| type     | `default`,`primary`,`success`,`info`,`warn`,`error`,`danger` | String   | -        |
+| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | String   | `button` |
+| icon     | 设置按钮的图标类型                                | String   | -        |
+| block    | 通过设置属性 block 可将按钮宽度设置为 100%，（块级元素），常用于弹窗内操作按钮。 | Boolean  | false    |
+| plain    | 是否朴素按钮                                   | Boolean  | false    |
+| disabled | 禁用状态                                     | Boolean  | false    |
+| active   | 激活状态，其表现为被按压下去（底色更深、边框夜色更深、向内投射阴影）。      | Boolean  | false    |
+| loading  | 加载中状态                                    | Boolean  | false    |
+| onClick  | click 事件的 handler                        | function | -        |
+
+
 
 ### Button.Group
 
-| 参数 | 说明 | 类型 | 默认值 |
-| -------- | -------- | -------- | -------- |
-| vertical | 竖排列 | Boolean | `false` |
+| 参数       | 说明   | 类型      | 默认值     |
+| -------- | ---- | ------- | ------- |
+| vertical | 竖排列  | Boolean | `false` |

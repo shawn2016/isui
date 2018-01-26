@@ -7,7 +7,7 @@ export default class Badge extends Component {
     const supProps = {
       className: this.classNames({
         [`${prefixCls}-count`]: !dot,
-        'w-dot': dot,
+        'is-dot': dot,
       }),
     };
     const warpperProps = {

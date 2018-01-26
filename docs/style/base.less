@@ -2,7 +2,7 @@
 body {
   color: #343b41;
   a {
-    color: #328dd0;
+    color: #409eff;
     &:hover {
       color: #0089ff;
     }
@@ -259,4 +259,28 @@ body::selection {
   line-height: 24px;
   color: #909090;
 }
-
+.is-docs-menu-right{
+  position: fixed;
+    top: 120px;
+    right: 20px;
+    .is-menu-vertical{
+      border-right: 0 solid #e8e8e8;
+      border-left: 1px solid #e8e8e8;
+    }
+    .is-menu-item{
+      line-height: 20px;
+      margin: 0;
+      padding: 0 10px 0 10px !important;
+      font-size: 12px;
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      cursor: pointer;
+      -webkit-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      transition: color 0.2s;
+    }
+    .is-menu-vertical .is-menu-item:after{
+      border-right: 0 solid #0ea042;
+    }
+}

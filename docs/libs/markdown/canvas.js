@@ -25,8 +25,6 @@ export default class Canvas extends React.Component {
     this.source = this.document[2].match(/```(.*)\n([^]+)```/);
     this.description = marked(this.document[1]);
     this.highlight = marked(this.document[2]);
-    console.log(this.source)
-    console.log(this.document)
     this.state = {
       showBlock: false
     };

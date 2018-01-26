@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import prism from 'prismjs';
 import marked from 'marked';
 import Canvas from './canvas';
+import { Menu, Affix } from "../../../src";
 
 export default class Markdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: ""
+      markdown: "",
+      markdownCopy: ""
     }
     this.components = new Map();
   }
@@ -34,7 +36,8 @@ export default class Markdown extends React.Component {
   renderMarkdown(locale, fileName) {
     return import(`../../md/${locale}/${fileName}.md`).then(module => {
       this.setState({
-        markdown: module
+        markdown: module,
+        markdownCopy: module
       })
     })
   }
@@ -49,10 +52,15 @@ export default class Markdown extends React.Component {
     return 'quick-start';
   }
   render() {
-    const { markdown } = this.state;
+    const { markdown, markdownCopy } = this.state;
+    const menuListRight = []
     let prefixCls = 'is-docs'
-    if (typeof markdown === 'string') {
+    if (typeof markdownCopy === 'string') {
       this.components.clear();
+      const menuItem = marked(markdownCopy.replace(/###\s([^]+?)\n/g, (match, p1, offset) => {
+        console.log(p1)
+        menuListRight.push(p1)
+      }));
       const html = marked(markdown.replace(/<!--\s?DemoStart\s?-->([^]+?)<!--\s?End\s?-->/g, (match, p1, offset) => {
         const id = offset.toString(36);
         this.components.set(id, React.createElement(Canvas, Object.assign({
@@ -60,9 +68,20 @@ export default class Markdown extends React.Component {
         }, this.props), p1));
         return `<div id=${id}></div>`;
       }));
-
+      console.log(menuListRight)
       return (
         <div>
+          <Affix>
+            <div className={`${prefixCls}-menu-right`}>
+              <Menu style={{ width: 110 }}>
+                {
+                  menuListRight.map((item, i) => (
+                    <Menu.Item key={i} index={item}>{item}</Menu.Item>
+                  ))
+                }
+              </Menu>
+            </div>
+          </Affix>
           <div className={`${prefixCls}-content-warpper`} dangerouslySetInnerHTML={{ __html: html }} />
           <div className={`${prefixCls}-docinfo`}>
             犯了错误还是想对文件做出贡献？ <a href={`https://github.com/shawn2016/isui/blob/master/docs/md/${this.getLang() + '/' + this.getPageName()}.md`} target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a> <br />

@@ -5,7 +5,7 @@ import Icon from '../icon/';
 
 export default class Button extends Component {
   render() {
-    const { prefixCls, type, size, icon, active, disabled, block, className, loading, children, htmlType, ...others } = this.props;
+    const { prefixCls, type, size, round, plain, icon, active, disabled, block, className, loading, children, htmlType, ...others } = this.props;
     let types = type;
     switch (type) {
       case 'error': types = 'danger'; break;
@@ -19,6 +19,8 @@ export default class Button extends Component {
       [`${prefixCls}-loading`]: loading, // 加载
       disabled: disabled || loading, // 禁用状态
       active, // 激活状态
+      [`${prefixCls}-round`]: round, // 圆形
+      [`${prefixCls}-plain`]: plain, // 是否朴素按钮
       block, // （块级元素）Block level
 
       [className]: className,
@@ -37,6 +39,8 @@ Button.defaultProps = {
   active: false,
   loading: false,
   block: false,
+  round: false,
+  plain: false,
   htmlType: 'button',
   type: 'default',
   size: 'default',
@@ -46,6 +50,7 @@ Button.propTypes = {
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
   icon: PropTypes.string,
+  round: PropTypes.bool,
   htmlType: PropTypes.string,
   active: PropTypes.bool,
   size: PropTypes.oneOf(['large', 'default', 'small', 'mini']),

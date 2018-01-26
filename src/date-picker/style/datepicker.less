@@ -1,19 +1,18 @@
 @datepicker:~"is-datepicker";
 
 .@{datepicker} {
-  width: 201px;
+  width: 280px;
   position: absolute;
-  background: #d0cfcf;
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 4px;
   margin-top: 5px;
   padding: 1px;
   font-size: 12px;
   z-index: 1010;
   // box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(16, 22, 26, 0.2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
-
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   &-bar {
-    background: #fafafa;
     border-radius: 4px 4px 0 0;
     text-align: center;
     height: 30px;
@@ -64,22 +63,23 @@
     float: right;
   }
   &-week {
-    background: #dedede;
-    height: 21px;
-    line-height: 21px;
-    color: #696969;
+    background: #fff;
+    // height: 21px;
+    padding: 6px 0;
+    line-height: 18px;
+    // color: #696969;
     th {
       font-weight: normal;
       text-align: center;
       user-select: none;
       width: 14.285%;
       &.end {
-        background: #ececec;
+        background: #fff;
       }
     }
   }
   &-days {
-    background: #fafafa;
+    background: #fff;
     min-width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -88,11 +88,11 @@
       line-height: 28px;
       text-align: center;
       cursor: pointer;
-      box-shadow: inset -1px -1px 0 #eaeaea;
+      // box-shadow: inset -1px -1px 0 #eaeaea;
       transition: all @transition-time @transition-timing-functio;
       user-select: none;
       &:hover {
-        background: #f5f5f5;
+        color: #409eff;
       }
       &:active {
         background: #e0e0e0;
@@ -110,16 +110,16 @@
       right: 1px;
       width: 0;
       height: 0;
-      border-top: 8px solid #ff4b4b;
+      border-top: 8px solid #409eff;
       border-left: 8px solid transparent;
       display: inline-block;
     }
   }
   td&-select-day {
-    background: #d0d0d0;
-    box-shadow: inset -1px -1px 0 #eaeaea, inset 0 0 0 5px #fafafa;
+    // background: #d0d0d0;
+    // box-shadow: inset -1px -1px 0 #eaeaea, inset 0 0 0 5px #fafafa;
     &:hover, &:active {
-      background: #d0d0d0;
+      // background: #d0d0d0;
     }
   }
   td&-sun, td&-sat {
@@ -198,7 +198,7 @@
     border-bottom: 1px solid #eaeaea;
     span {
       font-size: 12px;
-      color: #328dd0;
+      color: #409eff;
       &:hover {
         color: #0089ff;
         cursor: pointer;

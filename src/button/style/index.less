@@ -21,7 +21,7 @@
   user-select: none;
   outline: 0;
   & + & {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   &:active,
   &.active {
@@ -66,6 +66,10 @@
       display: inline-block;
       animation: loading-rotate .6s linear infinite;
     }
+  }
+  &.is-btn-round {
+    border-radius: 20px;
+    padding: 12px 23px;
   }
   i[class^="is-icon"] + span {
     margin-left: 5px;

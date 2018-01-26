@@ -3,7 +3,7 @@ DatePicker 日期选择器
 
 用于选择或输入日期
 
-## 基础实例
+### 基础实例
 
 <!--DemoStart--> 
 ```js
@@ -52,7 +52,7 @@ class Demo extends Component {
 ```
 <!--End-->
 
-## 定制日期单元格
+### 定制日期单元格
 
 使用 `renderDate` 可以自定义日期单元格的内容和样式。
 
@@ -113,7 +113,7 @@ class Demo extends Component {
 ```
 <!--End-->
 
-## 格式化时间
+### 格式化时间
 
 通过设置`format`支持简单的格式化，特别注意`2017-11-28`这种形式，在Safari上面会报错误。
 
@@ -156,7 +156,7 @@ class Demo extends Component {
 ```
 <!--End-->
 
-## 禁用控件
+### 禁用控件
 
 选择框的不可用状态。
 
@@ -189,7 +189,7 @@ class Demo extends Component {
 ```
 <!--End-->
 
-## 禁用时间
+### 禁用时间
 
 通过设置`disabledDate`来禁止选择部分日期。
 
@@ -218,7 +218,7 @@ class Demo extends Component {
 ```
 <!--End-->
 
-## 选择时分秒
+### 选择时分秒
 
 <!--DemoStart--> 
 ```js
@@ -237,7 +237,7 @@ class Demo extends Component {
 <!--End-->
 
 
-## 安装和使用
+### 安装和使用
 
 ```bash
 npm install isui --save
@@ -251,7 +251,7 @@ import DatePicker from 'isui/lib/date-picker';
 
 > 输入框继承 `<Input/>` 组件。支持 Input 的部分属性如`size`,`disabled`, `size`, `autoFocus`, `preIcon`, `defaultValue`
 
-### DatePicker
+#### DatePicker
 
 | 参数 | 说明 | 类型 | 默认值 |
 |--------- |-------- |--------- |-------- |
@@ -272,7 +272,7 @@ import DatePicker from 'isui/lib/date-picker';
 | shortcutClassName | 快捷键样式类名称 | String | - |
 | onChange | 时间发生变化的回调 time:`2017-12-18 12:18:43`、timeString:`Fri Jul 28 2017 09:45:00 GMT+0800 (CST)` | function(time:String, timeString: String) | - |
 
-### shortcut
+#### shortcut
 
 | 参数 | 说明 | 类型 | 默认值 |
 |--------- |-------- |--------- |-------- |
