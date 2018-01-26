@@ -150,7 +150,7 @@ const routes = {
     ]
   },
   redirect: [
-    //重定向到 quick start 页面
+    //重定向到 quick start Kaishi页面
     { path: "", redirect: "/cn/quick-start" }
   ]
 }
