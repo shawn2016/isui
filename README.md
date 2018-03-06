@@ -30,7 +30,7 @@ ReactDOM.render(
 
 ### Documentation
 
-Visit the [https://github.com/shawn2016/isui.git](https://github.com/shawn2016/isui.git) website for more information.
+Visit the [http://nodedai.com/isui/#/cn/quick-start](http://nodedai.com/isui/#/cn/quick-start) website for more information.
 
 <p align="center">
 <a href="https://github.com/shawn2016/isui.git"><img src="https://github.com/shawn2016/isui/blob/master/demo.png" /></a>
